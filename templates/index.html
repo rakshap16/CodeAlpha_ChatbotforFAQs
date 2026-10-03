@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaBot - AI Customer Support FAQ Chatbot</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="chat-wrapper">
+    <!-- Main Chat Container -->
+    <main class="chat-card">
+      <!-- Header -->
+      <header class="chat-header">
+        <div class="header-left">
+          <div class="bot-avatar">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="10" rx="2"></rect>
+              <circle cx="12" cy="5" r="2"></circle>
+              <path d="M12 7v4"></path>
+              <line x1="8" y1="16" x2="8" y2="16"></line>
+              <line x1="16" y1="16" x2="16" y2="16"></line>
+            </svg>
+            <span class="status-indicator"></span>
+          </div>
+          <div class="header-info">
+            <h2>NovaBot Support</h2>
+            <p>NovaTech Electronics &bull; FAQ Chatbot</p>
+          </div>
+        </div>
+        <div class="header-actions">
+          <button id="toggle-faqs-btn" class="header-btn" title="Browse Knowledge Base">
+            📚 FAQs
+          </button>
+          <button id="toggle-diagnostics-btn" class="header-btn" title="View NLP Pipeline Details">
+            🔍 NLP Inspector
+          </button>
+          <button id="clear-chat-btn" class="header-btn" title="Clear Chat History">
+            🗑️ Clear
+          </button>
+        </div>
+      </header>
+
+      <!-- Quick Topic Chips -->
+      <section class="quick-topics" aria-label="Suggested topics">
+        <span class="topics-label">Quick Suggestions:</span>
+        <div class="chips-container">
+          <button class="topic-chip" data-query="How do I track my order?">Track Order</button>
+          <button class="topic-chip" data-query="What is your return policy?">Return Policy</button>
+          <button class="topic-chip" data-query="What payment methods do you accept?">Payment Methods</button>
+          <button class="topic-chip" data-query="Do products come with a warranty?">Warranty</button>
+          <button class="topic-chip" data-query="How long does shipping take?">Shipping Times</button>
+          <button class="topic-chip" data-query="Do you have student discounts?">Student Discount</button>
+        </div>
+      </section>
+
+      <!-- Chat Messages Container -->
+      <div id="messages-container" class="messages-container">
+        <!-- Bot Welcome Message -->
+        <div class="message-row bot-row">
+          <div class="msg-avatar bot-avatar-small">🤖</div>
+          <div class="bubble bot-bubble">
+            <p>Hello! Welcome to <strong>NovaTech Support</strong>. I am your 24/7 AI FAQ assistant.</p>
+            <p>You can ask questions regarding order tracking, deliveries, warranty claims, returns, payment options, and more!</p>
+            <div class="bubble-meta">NLP Cosine Similarity Engine &bull; Ready</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Typing Indicator -->
+      <div id="typing-indicator" class="typing-indicator hidden">
+        <span></span><span></span><span></span>
+      </div>
+
+      <!-- Chat Input Area -->
+      <footer class="chat-input-area">
+        <form id="chat-form" class="input-form">
+          <input
+            type="text"
+            id="user-input"
+            placeholder="Type your question here (e.g. 'Can I return an item?')..."
+            autocomplete="off"
+            required
+          />
+          <button type="submit" id="send-btn" class="send-btn" aria-label="Send message">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </form>
+      </footer>
+    </main>
+
+    <!-- Side Panel: NLP Diagnostics Inspector -->
+    <aside id="diagnostics-panel" class="side-panel hidden">
+      <div class="panel-header">
+        <h3>NLP Pipeline Inspector</h3>
+        <button id="close-diagnostics-btn" class="close-btn">&times;</button>
+      </div>
+      <div class="panel-body">
+        <div class="diag-card">
+          <h4>1. Original User Query</h4>
+          <pre id="diag-raw">No query processed yet.</pre>
+        </div>
+        <div class="diag-card">
+          <h4>2. Tokenization (NLTK)</h4>
+          <pre id="diag-tokens">[]</pre>
+        </div>
+        <div class="diag-card">
+          <h4>3. Stopwords Filtered</h4>
+          <pre id="diag-stopwords">[]</pre>
+        </div>
+        <div class="diag-card">
+          <h4>4. Lemmatized Tokens</h4>
+          <pre id="diag-lemmas">[]</pre>
+        </div>
+        <div class="diag-card">
+          <h4>5. Normalized Query Vector</h4>
+          <pre id="diag-normalized">-</pre>
+        </div>
+        <div class="diag-card">
+          <h4>6. Matching & Cosine Similarity</h4>
+          <pre id="diag-matching">-</pre>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Modal: FAQ Knowledge Base Browser -->
+    <div id="faqs-modal" class="modal-overlay hidden">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Browse All Indexed FAQs</h3>
+          <button id="close-modal-btn" class="close-btn">&times;</button>
+        </div>
+        <div class="modal-search">
+          <input type="text" id="faq-search-input" placeholder="Search FAQ database...">
+        </div>
+        <div id="faqs-list" class="faqs-list">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>

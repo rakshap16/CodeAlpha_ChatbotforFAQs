@@ -1,0 +1,311 @@
+{
+  "faq_data": [
+    {
+      "id": 1,
+      "category": "Orders & Tracking",
+      "question": "How do I track my order?",
+      "patterns": [
+        "Where is my package?",
+        "Track my shipment",
+        "How can I check the status of my order?",
+        "Order tracking number",
+        "Check order status",
+        "Where has my delivery reached?",
+        "Where is my shipment right now?"
+      ],
+      "answer": "You can track your order in real-time by visiting the 'Order History' section in your account or by clicking the tracking link sent to your email after shipment. You can also enter your Tracking ID on our Track Order page.",
+      "tags": ["track", "order", "status", "shipment", "package", "delivery", "courier", "tracking id"]
+    },
+    {
+      "id": 2,
+      "category": "Orders & Tracking",
+      "question": "Can I cancel or modify my order after placing it?",
+      "patterns": [
+        "How to cancel my order?",
+        "Can I change the items in my order?",
+        "Cancel purchase",
+        "I want to cancel order",
+        "Can I edit my order before it ships?",
+        "Can I cancel my purchase before it ships?"
+      ],
+      "answer": "Orders can be modified or canceled within 60 minutes of placement from your 'Order Details' page. Once processing begins in our warehouse, orders cannot be canceled, but you can return them free of charge once delivered.",
+      "tags": ["cancel", "modify", "change", "order", "edit", "purchase", "stop order"]
+    },
+    {
+      "id": 3,
+      "category": "Shipping & Delivery",
+      "question": "How long does shipping take and what are the delivery options?",
+      "patterns": [
+        "What are shipping times?",
+        "Delivery timeframe",
+        "How fast do you deliver?",
+        "Standard vs express shipping",
+        "When will my order arrive?",
+        "How many days will delivery take?",
+        "How many days for shipping?",
+        "Delivery duration in business days"
+      ],
+      "answer": "We offer standard shipping (3-5 business days) and express priority shipping (1-2 business days). Orders placed before 2:00 PM EST on weekdays ship the same day.",
+      "tags": ["shipping", "delivery", "time", "express", "standard", "days", "duration", "fast"]
+    },
+    {
+      "id": 4,
+      "category": "Shipping & Delivery",
+      "question": "Do you offer international shipping?",
+      "patterns": [
+        "Do you ship overseas?",
+        "Worldwide delivery",
+        "Can I order from outside the United States?",
+        "International shipping rates",
+        "Do you deliver globally?",
+        "Can you deliver to Europe or Canada?",
+        "Shipping outside US"
+      ],
+      "answer": "Yes, we ship to over 85 countries worldwide! International shipping usually takes 7-14 business days. Any applicable customs duties or import taxes will be calculated at checkout.",
+      "tags": ["international", "worldwide", "overseas", "global", "customs", "europe", "canada", "foreign"]
+    },
+    {
+      "id": 5,
+      "category": "Shipping & Delivery",
+      "question": "What happens if I am not home during delivery?",
+      "patterns": [
+        "I missed my delivery",
+        "What if I'm not home when package arrives?",
+        "Courier delivery attempt missed",
+        "Do I need to sign for delivery?",
+        "What if nobody is home for the delivery?",
+        "Not available during delivery"
+      ],
+      "answer": "If you are not available, the courier will leave a notice card and attempt redelivery the next business day. High-value orders requiring a signature can be redirected to a local courier pickup point through your tracking portal.",
+      "tags": ["missed", "delivery", "home", "signature", "courier", "redelivery", "nobody home", "attempt"]
+    },
+    {
+      "id": 6,
+      "category": "Returns & Refunds",
+      "question": "What is your return policy and how do I return an item?",
+      "patterns": [
+        "How do I return a product?",
+        "What is your refund policy?",
+        "Can I return an opened item?",
+        "30-day return policy",
+        "How to start a return?",
+        "Return window",
+        "How do I return an opened box product?",
+        "Send back an item for return"
+      ],
+      "answer": "We offer a 30-day hassle-free return window for all items in original condition and packaging. To initiate a return, go to Account > Returns & Refunds to generate a prepaid return shipping label.",
+      "tags": ["return", "refund", "policy", "label", "condition", "30 days", "send back", "return item"]
+    },
+    {
+      "id": 7,
+      "category": "Returns & Refunds",
+      "question": "How long does it take to receive my refund?",
+      "patterns": [
+        "When will I get my refund?",
+        "Refund processing time",
+        "How many days for refund to show up?",
+        "Where is my refund money?",
+        "When does the money get credited back for my return?",
+        "Refund credit to bank account"
+      ],
+      "answer": "Once our warehouse inspects your returned product (typically 2-3 business days), refunds are issued immediately. It usually takes 3-7 business days to reflect on your original payment method.",
+      "tags": ["refund", "time", "credit", "processing", "bank", "account", "money back"]
+    },
+    {
+      "id": 8,
+      "category": "Returns & Refunds",
+      "question": "What should I do if my item arrives damaged or defective?",
+      "patterns": [
+        "Received a broken item",
+        "My product is defective",
+        "Damaged item in delivery",
+        "Package arrived cracked or faulty",
+        "Replacement for broken item",
+        "My screen arrived broken and damaged"
+      ],
+      "answer": "We apologize for the trouble! Please report damaged or defective items within 48 hours of delivery. Upload photos in the Returns portal, and we will send a complimentary expedited replacement immediately.",
+      "tags": ["damaged", "broken", "defective", "faulty", "replacement", "cracked", "screen"]
+    },
+    {
+      "id": 9,
+      "category": "Payments & Billing",
+      "question": "What payment methods do you accept?",
+      "patterns": [
+        "Can I pay with credit card?",
+        "Do you accept PayPal?",
+        "Payment options available",
+        "Do you accept Apple Pay or Google Pay?",
+        "Is cash on delivery available?",
+        "Do you accept Apple Pay or PayPal?"
+      ],
+      "answer": "We accept major credit and debit cards (Visa, MasterCard, American Express, Discover), PayPal, Apple Pay, Google Pay, and flexible installments through Klarna and Affirm. We currently do not support Cash on Delivery.",
+      "tags": ["payment", "credit card", "paypal", "apple pay", "google pay", "klarna", "billing", "cards"]
+    },
+    {
+      "id": 10,
+      "category": "Payments & Billing",
+      "question": "Is my payment and personal information secure?",
+      "patterns": [
+        "Is it safe to pay on this website?",
+        "Payment security",
+        "Do you store my credit card details?",
+        "SSL encryption security",
+        "Is my credit card information encrypted and secure?",
+        "Are checkout transactions safe?"
+      ],
+      "answer": "Yes, your transactions are 100% secure. We utilize end-to-end 256-bit SSL encryption and comply with Level 1 PCI-DSS standards. We never store your full payment card details on our servers.",
+      "tags": ["secure", "safety", "ssl", "encryption", "card security", "pci", "data protection"]
+    },
+    {
+      "id": 11,
+      "category": "Warranty & Support",
+      "question": "Do your products come with a warranty?",
+      "patterns": [
+        "What is the warranty coverage?",
+        "How long is the warranty?",
+        "Does warranty cover accidental damage?",
+        "Hardware guarantee",
+        "Claim warranty",
+        "What does the 1 year warranty cover?",
+        "Manufacturer warranty details"
+      ],
+      "answer": "All brand-new electronic devices include a standard 1-Year Limited Manufacturer Warranty covering hardware defects and malfunctions. Optional NovaCare Extended Warranty is available at checkout for accidental drop/spill coverage.",
+      "tags": ["warranty", "guarantee", "repair", "hardware", "defects", "coverage", "1 year"]
+    },
+    {
+      "id": 12,
+      "category": "Warranty & Support",
+      "question": "How do I claim a warranty repair or replacement?",
+      "patterns": [
+        "How to file a warranty claim?",
+        "My device stopped working under warranty",
+        "Warranty service request",
+        "Fix my broken gadget under warranty",
+        "How to request a repair for my broken gadget under warranty?",
+        "Repair device under warranty"
+      ],
+      "answer": "To claim your warranty, visit the 'Warranty Support' page with your serial number and invoice. Our tech support team will troubleshoot the issue or provide a prepaid shipping box for authorized repair.",
+      "tags": ["claim", "warranty", "repair", "service", "serial number", "fix device", "malfunction"]
+    },
+    {
+      "id": 13,
+      "category": "Account & Security",
+      "question": "How do I reset my password?",
+      "patterns": [
+        "Forgot my password",
+        "Cannot log into my account",
+        "Reset account login credentials",
+        "Password recovery link",
+        "I forgot my password and cannot sign in",
+        "Change my password"
+      ],
+      "answer": "Click 'Sign In' at the top right, select 'Forgot Password?', enter your registered email address, and we will send you a secure password reset link within minutes.",
+      "tags": ["password", "reset", "forgot", "account", "login", "recover", "sign in", "credentials"]
+    },
+    {
+      "id": 14,
+      "category": "Account & Security",
+      "question": "How do I update my delivery address or account details?",
+      "patterns": [
+        "Change my shipping address",
+        "Update profile information",
+        "Edit default delivery address",
+        "Change account email or phone number",
+        "Change the shipping destination address in my profile"
+      ],
+      "answer": "Go to 'My Profile' > 'Address Book' to add, edit, or set default delivery addresses. Note: changing your address here does not alter existing orders already in transit; contact support for in-flight adjustments.",
+      "tags": ["address", "change", "profile", "account", "update", "shipping address", "destination"]
+    },
+    {
+      "id": 15,
+      "category": "Discounts & Promotions",
+      "question": "Do you offer student, military, or healthcare discounts?",
+      "patterns": [
+        "Student discount code",
+        "Military discount",
+        "Do you have coupons for students?",
+        "Promo codes and discounts",
+        "Are there coupon codes for college students?",
+        "Do you have student discounts?"
+      ],
+      "answer": "Yes! We offer a 10% discount for verified students, educators, active military, and first responders through our ID.me integration. Verify your status at checkout to apply your savings instantly.",
+      "tags": ["student", "military", "discount", "promo", "coupon", "id.me", "college", "voucher"]
+    },
+    {
+      "id": 16,
+      "category": "Discounts & Promotions",
+      "question": "How do I apply a promo code or gift card to my order?",
+      "patterns": [
+        "Where do I enter promo code?",
+        "Redeem gift voucher",
+        "Coupon code box not working",
+        "Apply discount code at checkout",
+        "Where do I enter my promo voucher code?",
+        "How to use promo code"
+      ],
+      "answer": "On the Checkout page, look for the 'Promo / Gift Card' box below your order summary. Enter your code and click 'Apply' to see your balance deducted from the total.",
+      "tags": ["coupon", "promo", "gift card", "voucher", "redeem", "discount code", "code box"]
+    },
+    {
+      "id": 17,
+      "category": "Products & Inventory",
+      "question": "How do I know if an item is in stock or when it will be restocked?",
+      "patterns": [
+        "Product out of stock",
+        "When will you restock?",
+        "Is item available?",
+        "Notify me when back in stock",
+        "When will out-of-stock headphones be available?",
+        "Restock date for products"
+      ],
+      "answer": "Real-time stock availability is displayed directly on each product page. If an item is sold out, click the 'Notify Me When Available' button to receive an instant email as soon as new inventory arrives.",
+      "tags": ["stock", "inventory", "restock", "availability", "notify", "sold out", "available", "headphones"]
+    },
+    {
+      "id": 18,
+      "category": "Products & Inventory",
+      "question": "What is the condition of refurbished or open-box products?",
+      "patterns": [
+        "Are refurbished items reliable?",
+        "What does open-box mean?",
+        "Refurbished quality guarantee",
+        "Used product condition",
+        "Are certified refurbished devices safe to buy?",
+        "Certified refurbished quality and testing",
+        "Is it safe to buy refurbished gadgets?"
+      ],
+      "answer": "All 'Certified Refurbished' products undergo a rigorous 65-point inspection, thorough sanitization, and battery health verification. They arrive in pristine cosmetic condition with all accessories and a 6-month warranty.",
+      "tags": ["refurbished", "open-box", "certified", "condition", "used", "testing", "safe to buy", "devices"]
+    },
+    {
+      "id": 19,
+      "category": "Customer Support",
+      "question": "How can I contact a human customer support agent?",
+      "patterns": [
+        "Talk to a human",
+        "Customer service phone number",
+        "Speak with real person",
+        "Live agent chat",
+        "Contact email address",
+        "I want to speak with a human customer service agent",
+        "Contact live support representative"
+      ],
+      "answer": "You can reach our live support team 24/7 via phone at 1-800-555-NOVA, email us at support@novatech-electronics.com, or request a live agent right here between 8 AM and 10 PM EST.",
+      "tags": ["contact", "agent", "human", "phone", "email", "support", "representative", "customer service"]
+    },
+    {
+      "id": 20,
+      "category": "Orders & Tracking",
+      "question": "Can I change the delivery address for an order that is already placed?",
+      "patterns": [
+        "Change address after ordering",
+        "Wrong address on order",
+        "Update shipping destination for placed order",
+        "Reroute shipment",
+        "Can I change the shipping address for an existing order?"
+      ],
+      "answer": "If your order has not yet been processed (within 1 hour of ordering), contact our support team immediately or edit it under 'Recent Orders'. If already dispatched, you can reroute via the courier's tracking portal.",
+      "tags": ["change address", "wrong address", "reroute", "shipping destination", "in flight"]
+    }
+  ]
+}

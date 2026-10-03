@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "🌐 Run Web Chatbot (Flask)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/app.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "💻 Run Desktop GUI Chatbot (Tkinter)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/gui_chat.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "⌨️ Run CLI Chatbot (Terminal)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/cli_chat.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "🧪 Run Evaluation & Tests",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/evaluate.py",
+      "console": "integratedTerminal"
+    }
+  ]
+}
